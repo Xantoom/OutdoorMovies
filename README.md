@@ -2,7 +2,7 @@
 
 > OutdoorMovies est un projet de formation de la formation Développeur PHP/Symfony d'OpenClassrooms. Il s'agit d'un site présentant un festival de films.
 
-Étape du projet : 5% - à compléter
+Étape du projet : 75% - à compléter
   
 ## Utilisation ##
 
