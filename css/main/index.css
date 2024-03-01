@@ -1,0 +1,84 @@
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 1.5%;
+}
+
+.card {
+    position: relative;
+
+    /** when the mouse is over the card, the title, description and link appear */
+    &:hover {
+        .card-title, .card-description, .card-link {
+            transition: 0.5s;
+            opacity: 1;
+        }
+    }
+}
+
+.card-img {
+    height: 100%;
+
+    /** bordure arrondie */
+    border-radius: 5px;
+}
+
+.card-title {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-size: 0.8rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /** Hide the title, and when the mouse is over the card, the title appears */
+    opacity: 0;
+}
+
+.card-description {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-size: 0.6rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /** Hide the description, and when the mouse is over the card, the description appears */
+    opacity: 0;
+}
+
+
+.card-link {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+
+    font-size: 0.6rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    background-color: var(--purple);
+    color: var(--yellow);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+    /** Hide the link, and when the mouse is over the card, the link appears */
+    opacity: 0;
+
+    /** Effet de survol */
+    &:hover {
+        background-color: var(--yellow);
+        color: var(--purple);
+    }
+}
