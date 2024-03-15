@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Les Films de Plein Air est un site de réservation de places pour des projections de films en plein air.">
     <title>Les Films de Plein Air</title>
 
     <!-- Logo -->
@@ -18,7 +19,7 @@
 <body>
     <header>
         <!-- Logo -->
-        <a href="#">
+        <a href="./index.html">
             <img src="assets/Logo.png" alt="Logo">
         </a>
     </header>
@@ -28,27 +29,32 @@
         <section class="banner-section">
             <div class="banner-div">
                 <img src="https://picsum.photos/1500/500" alt="Banner" class="banner-img">
-                <h4 class="banner-description">Description du site</h4>
+                <h4 class="banner-description">
+					Festival de films en plein air
+				</h4>
             </div>
+        </section>
+
+        <section class="event-section">
+			<h2 class="event-title">Évènement ouvert à tous, sous réservation</h2>
+			<p class="event-text">Le festival "Les Films de Plein Air" vous propose une sélection de films d'auteurs à voir en plein air, dans un cadre exceptionnel. Venez profiter d'une soirée cinéma en plein air, en famille ou entre amis. Le festival se tiendra du 5 au 8 août 2024, de 18h à minuit. Les projections auront lieu au parc Monceau, à Paris. Pour réserver vos places, cliquez sur le film qui vous intéresse ci-dessous.</p>
         </section>
 
         <!-- Cards Movies -->
         <section class="cards-section">
-            <!-- Row (4 cards)-->
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="card">
-                    <img src="https://picsum.photos/350/550" alt="Film 1" class="card-img">
-                    <div class="card-infos">
-                        <!-- Title -->
-                        <h3 class="card-title">Film 1</h3>
-                        <!-- Description -->
-                        <p class="card-description">Film 1 description</p>
-                        <a href="pages/movie.html" class="card-link">Voir plus</a>
-                    </div>
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xDXKPeCyKuWJIKfFSAYsppKWsgW.jpg" alt="Affiche film Saint-Laurent" class="card-img">
+                <div class="card-infos">
+                    <!-- Title -->
+                    <h3 class="card-title">Saint-Laurent</h3>
+                    <!-- Description -->
+                    <p class="card-description">Les joies et les souffrances de celui qui voulait être le meilleur de sa génération, faire descendre la mode dans la rue et habiller la femme moderne, dans un monde qui change, noyé de fête et d’insouciance. La rencontre de l’un des plus grands couturiers de tous les temps avec les années 70, au cours de laquelle la maison Saint Laurent connaît sa fulgurante ascension.</p>
+                    <a href="pages/movie.html" class="card-link">Réserver</a>
                 </div>
-                <!-- Card 2 -->
-                <div class="card">
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 2" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -56,9 +62,9 @@
                         <!-- Description -->
                         <p class="card-description">Film 2 description</p>
                     </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="card">
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 3" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -66,9 +72,9 @@
                         <!-- Description -->
                         <p class="card-description">Film 3 description</p>
                     </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="card">
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 4" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -76,12 +82,9 @@
                         <!-- Description -->
                         <p class="card-description">Film 4 description</p>
                     </div>
-                </div>
             </div>
-            <!-- Row (4 cards)-->
-            <div class="row">
-                <!-- Card 5 -->
-                <div class="card">
+            <!-- Card 5 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 5" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -89,9 +92,9 @@
                         <!-- Description -->
                         <p class="card-description">Film 5 description</p>
                     </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="card">
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 6" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -99,9 +102,9 @@
                         <!-- Description -->
                         <p class="card-description">Film 6 description</p>
                     </div>
-                </div>
-                <!-- Card 7 -->
-                <div class="card">
+            </div>
+            <!-- Card 7 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 7" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -109,9 +112,9 @@
                         <!-- Description -->
                         <p class="card-description">Film 7 description</p>
                     </div>
-                </div>
-                <!-- Card 8 -->
-                <div class="card">
+            </div>
+            <!-- Card 8 -->
+            <div class="card">
                     <img src="https://picsum.photos/350/550" alt="Film 8" class="card-img">
                     <div class="card-infos">
                         <!-- Title -->
@@ -119,18 +122,22 @@
                         <!-- Description -->
                         <p class="card-description">Film 8 description</p>
                     </div>
-                </div>
             </div>
         </section>
-        
     </main>
 
     <footer>
         <!-- Social Networks -->
         <div class="footer-list">
-            <a href="#" class="footer-list-item"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="footer-list-item"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="footer-list-item"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-list-item" aria-label="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+            <a href="#" class="footer-list-item" aria-label="Twitter">
+				<i class="fab fa-twitter"></i>
+			</a>
+            <a href="#" class="footer-list-item" aria-label="Instagram">
+				<i class="fab fa-instagram"></i>
+			</a>
         </div>
 
         <!-- Legal Notice -->

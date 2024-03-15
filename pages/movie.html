@@ -7,21 +7,21 @@
     <title>Les Films de Plein Air</title>
 
     <!-- Logo -->
-    <link rel="icon" href="assets/Logo.svg">
+    <link rel="icon" href="../assets/Logo.png">
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/6c0d0c1b30.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/b5fc961b5d.js" crossorigin="anonymous"></script>
+	
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main/movie.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main/movie.css">
 </head>
 
 <body>
     <header>
         <!-- Logo -->
-        <a href="#">
-            <img src="assets/Logo.svg" alt="Logo">
+        <a href="../index.html">
+            <img src="../assets/Logo.png" alt="Logo">
         </a>
     </header>
 
@@ -35,11 +35,23 @@
         </section>
 
         <!-- Section -->
-        <section class="section">
-            <img src="https://picsum.photos/500/750" alt="Banner" class="section-img">
-            <div class="section-infos">
-                <h3 class="section-title">Film 1</h3>
-                <p class="section-description">Film 1 description</p>
+        <section class="movie-section">
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xDXKPeCyKuWJIKfFSAYsppKWsgW.jpg" alt="Banner" class="movie-img">
+            <div class="movie-infos">
+                <h3 class="movie-title">Saint-Laurent</h3>
+                <p class="movie-description">Les joies et les souffrances de celui qui voulait être le meilleur de sa génération, faire descendre la mode dans la rue et habiller la femme moderne, dans un monde qui change, noyé de fête et d’insouciance. La rencontre de l’un des plus grands couturiers de tous les temps avec les années 70, au cours de laquelle la maison Saint Laurent connaît sa fulgurante ascension.</p>
+				<form action="#" method="post">
+					<h3>Réserver vos places !</h3>
+					<div class="form-group">
+						<label for="places">Nombre de places</label>
+						<input type="number" id="places" name="places" min="1" max="10" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Adresse email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<button type="submit" class="btn">Réserver</button>
+				</form>
             </div>
         </section>
 
@@ -55,12 +67,12 @@
 
         <!-- Legal Notice -->
         <div class="footer-list">
-            <a href="#" class="footer-list-item">Mentions légales</a>
+            <a href="pages/legal_notices.html" class="footer-list-item">Mentions légales</a>
         </div>
 
         <!-- Contact -->
         <div class="footer-list">
-            <a href="#" class="footer-list-item">Contact</a>
+            <a href="pages/contact.html" class="footer-list-item">Contact</a>
         </div>
     </footer>
 </body>

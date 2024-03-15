@@ -51,8 +51,8 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
 
-  font-size: 3rem;
-  color: #fff;
+  font-size: 2rem;
+  color: var(--yellow);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -61,7 +61,7 @@ footer {
   text-align: center;
   margin-top: 1.5%;
   padding: 1.5%;
-  background-color: var(--yellow);
+  background-color: #333;
 }
 
 .footer-list {
@@ -72,7 +72,7 @@ footer {
 
 .footer-list-item {
   list-style: none;
-  color: var(--red);
+  color: #fff;
   text-decoration: none;
 
   &:hover {

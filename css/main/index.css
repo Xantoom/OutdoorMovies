@@ -1,84 +1,108 @@
-.row {
+.event-section {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-bottom: 12px;
+
+	text-align: center;
+}
+
+.event-title {
+	margin-bottom: 12px;
+	color: var(--purple);
+}
+
+.event-text {
+	margin-inline: 20%;
+
+	color: var(--purple);
+	text-align: center;
+}
+
+
+.cards-section {
     display: flex;
-    justify-content: center;
-    gap: 2%;
-    margin-bottom: 1.5%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cards-section > div {
+    flex: 20% 1 1;
+    min-width: 220px;
+    aspect-ratio: 2 / 3; /* movie poster aspect ratio */
+	margin-inline: 10px;
 }
 
 .card {
-    position: relative;
+	position: relative;
+}
 
-    /** when the mouse is over the card, the title, description and link appear */
-    &:hover {
-        .card-title, .card-description, .card-link {
-            transition: 0.5s;
-            opacity: 1;
-        }
-    }
+/** When the mouse is over the card, the title, description, and link appear */
+.card:hover {
+	.card-title,
+	.card-description,
+	.card-link {
+	  transition: 0.5s;
+	  opacity: 1;
+	}
+
+	.card-img {
+		filter: blur(1px);
+		filter: brightness(0.3);
+	}
 }
 
 .card-img {
     height: 100%;
 
     /** bordure arrondie */
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .card-title {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    font-size: 0.8rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-    /** Hide the title, and when the mouse is over the card, the title appears */
-    opacity: 0;
+	top: 50%;
+	left: 50%;
 }
 
 .card-description {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    font-size: 0.6rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-    /** Hide the description, and when the mouse is over the card, the description appears */
-    opacity: 0;
+	top: 60%;
+	left: 50%;
 }
 
+/* Center and style the title and description horizontally */
+.card-title,
+.card-description {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+  font-size: 0.8rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
 
+/* Style and position the "Réserver" link */
 .card-link {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
+  position: absolute;
+  bottom: 3%; /* Adjust for desired position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+  font-size: 0.6rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: var(--purple);
+  color: var(--yellow);
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
 
-    font-size: 0.6rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-    background-color: var(--purple);
-    color: var(--yellow);
-    padding: 0.3rem 0.8rem;
-    border-radius: 5px;
-    text-decoration: none;
-
-    /** Hide the link, and when the mouse is over the card, the link appears */
-    opacity: 0;
-
-    /** Effet de survol */
-    &:hover {
-        background-color: var(--yellow);
-        color: var(--purple);
-    }
+  /* Hover effect */
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--purple);
+  }
 }
