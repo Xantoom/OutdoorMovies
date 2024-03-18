@@ -59,24 +59,25 @@
     border-radius: 10px;
 }
 
+.card-infos {
+	position: absolute;
+    inset: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 .card-title {
-	top: 50%;
-	left: 50%;
+	margin: 0;
 }
 
 .card-description {
-	top: 60%;
-	left: 50%;
+	text-align: justify;
 }
 
 /* Center and style the title and description horizontally */
 .card-title,
 .card-description {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 80%; /* Adjust width as needed */
-  font-size: 0.8rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   opacity: 0;
@@ -84,13 +85,7 @@
 
 /* Style and position the "Réserver" link */
 .card-link {
-  position: absolute;
-  bottom: 3%; /* Adjust for desired position */
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%; /* Adjust width as needed */
-  font-size: 0.6rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: var(--purple);

@@ -41,7 +41,7 @@ header {
   object-fit: cover;
 
   /* EFFET DE FLOU */
-  filter: blur(1px);
+  filter: blur(2px);
 }
 
 .banner-description {
@@ -52,7 +52,7 @@ header {
   text-align: center;
 
   font-size: 2rem;
-  color: var(--yellow);
+  color: var(--red);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -76,6 +76,6 @@ footer {
   text-decoration: none;
 
   &:hover {
-    color: var(--purple);
+    color: var(--red);
   }
 }

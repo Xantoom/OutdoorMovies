@@ -1,3 +1,15 @@
+/* Si l'écran est plus petit que 1024px, on change la disposition des éléments */
+@media only screen and (max-width: 1024px) {
+	.movie-section {
+	  flex-direction: column;
+	
+	.movie-img {
+	  width: 100%;
+	  margin-bottom: 1rem;
+	}
+  }
+}
+
 .movie-section {
 	display: flex;
 	justify-content: center;
@@ -17,6 +29,8 @@
 
 .movie-infos {
 	flex: 66% 3 1;
+
+	color: var(--purple);
 }
 
 /** FORM */
@@ -34,6 +48,7 @@ form {
 
 .form-group > label {
 	font-size: 1.2rem;
+	color: var(--purple);
 }
 
 .form-group > input {
@@ -51,9 +66,9 @@ form {
 	padding: 0.5rem 1rem;
 	border: none;
 	border-radius: 5px;
-	background-color: var(--yellow);
-	color: var(--red);
-	font-size: 1rem;
+	background-color: var(--purple);
+	color: var(--yellow);
+	font-size: 1.2rem;
 	cursor: pointer;
 
 	&:hover {
